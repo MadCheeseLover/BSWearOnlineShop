@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C5422D825AF984F00F62E1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5422D725AF984F00F62E1E /* AppDelegate.swift */; };
+		1C5422DA25AF984F00F62E1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5422D925AF984F00F62E1E /* SceneDelegate.swift */; };
+		1C5422DF25AF984F00F62E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5422DD25AF984F00F62E1E /* Main.storyboard */; };
+		1C5422E225AF984F00F62E1E /* BSWearOnlineShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C5422E025AF984F00F62E1E /* BSWearOnlineShop.xcdatamodeld */; };
+		1C5422E425AF985400F62E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C5422E325AF985400F62E1E /* Assets.xcassets */; };
+		1C5422E725AF985400F62E1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5422E525AF985400F62E1E /* LaunchScreen.storyboard */; };
+		1C5422F225AF985400F62E1E /* BSWearOnlineShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5422F125AF985400F62E1E /* BSWearOnlineShopTests.swift */; };
+		1C5422FD25AF985400F62E1E /* BSWearOnlineShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5422FC25AF985400F62E1E /* BSWearOnlineShopUITests.swift */; };
+		1C54231125AF98DE00F62E1E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54231025AF98DE00F62E1E /* NetworkManager.swift */; };
+		1C54231725AF991300F62E1E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54231625AF991300F62E1E /* Category.swift */; };
+		1C54231F25AF992600F62E1E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54231E25AF992600F62E1E /* Product.swift */; };
+		1C54232525AF994700F62E1E /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54232425AF994700F62E1E /* URLs.swift */; };
+		1C54232D25AF99C000F62E1E /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54232C25AF99C000F62E1E /* CategoryViewController.swift */; };
+		1C54233325AF9A2B00F62E1E /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54233225AF9A2B00F62E1E /* CategoryTableViewCell.swift */; };
+		1C54237125BA11F700F62E1E /* SubcategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54237025BA11F700F62E1E /* SubcategoryViewController.swift */; };
+		1C54238725BA143500F62E1E /* SubcategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C54238625BA143500F62E1E /* SubcategoryTableViewCell.swift */; };
+		1CB564BC25C21672001D9BF6 /* ProductListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB564BB25C21672001D9BF6 /* ProductListCollectionViewController.swift */; };
+		1CB564C125C216DF001D9BF6 /* ProductListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB564C025C216DF001D9BF6 /* ProductListCollectionViewCell.swift */; };
+		1CB564C925C5A95F001D9BF6 /* PurchaseBasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB564C825C5A95F001D9BF6 /* PurchaseBasketViewController.swift */; };
+		1CB564D925C72A10001D9BF6 /* ProductCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB564D825C72A10001D9BF6 /* ProductCardViewController.swift */; };
+		1CB564E625C9E65B001D9BF6 /* ProductCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB564E525C9E65B001D9BF6 /* ProductCardCollectionViewCell.swift */; };
+		1CB564EE25CC3C1E001D9BF6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB564ED25CC3C1D001D9BF6 /* Extensions.swift */; };
+		1CB5651625D330B2001D9BF6 /* SizeViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5651525D330B2001D9BF6 /* SizeViewAnimation.swift */; };
+		1CB5652625D70092001D9BF6 /* SizePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5652525D70092001D9BF6 /* SizePopUpViewController.swift */; };
+		1CB5652E25D7025A001D9BF6 /* SizePopUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5652D25D7025A001D9BF6 /* SizePopUpTableViewCell.swift */; };
+		1CB5653625D8064D001D9BF6 /* AddToBasketButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5653525D8064C001D9BF6 /* AddToBasketButtonAnimation.swift */; };
+		1CB5653C25D80F20001D9BF6 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5653B25D80F1F001D9BF6 /* CoreDataManager.swift */; };
+		1CB5654125DAFC19001D9BF6 /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5654025DAFC18001D9BF6 /* BasketTableViewCell.swift */; };
+		1CB5654625DDA6E1001D9BF6 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB5654525DDA6DE001D9BF6 /* ImageLoader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C5422EE25AF985400F62E1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C5422CC25AF984F00F62E1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C5422D325AF984F00F62E1E;
+			remoteInfo = BSWearOnlineShop;
+		};
+		1C5422F925AF985400F62E1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C5422CC25AF984F00F62E1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C5422D325AF984F00F62E1E;
+			remoteInfo = BSWearOnlineShop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C5422D425AF984F00F62E1E /* BSWearOnlineShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSWearOnlineShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C5422D725AF984F00F62E1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C5422D925AF984F00F62E1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1C5422DE25AF984F00F62E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C5422E125AF984F00F62E1E /* BSWearOnlineShop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BSWearOnlineShop.xcdatamodel; sourceTree = "<group>"; };
+		1C5422E325AF985400F62E1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C5422E625AF985400F62E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C5422E825AF985400F62E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C5422ED25AF985400F62E1E /* BSWearOnlineShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSWearOnlineShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C5422F125AF985400F62E1E /* BSWearOnlineShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSWearOnlineShopTests.swift; sourceTree = "<group>"; };
+		1C5422F325AF985400F62E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C5422F825AF985400F62E1E /* BSWearOnlineShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSWearOnlineShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C5422FC25AF985400F62E1E /* BSWearOnlineShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSWearOnlineShopUITests.swift; sourceTree = "<group>"; };
+		1C5422FE25AF985400F62E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C54231025AF98DE00F62E1E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1C54231625AF991300F62E1E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		1C54231E25AF992600F62E1E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		1C54232425AF994700F62E1E /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		1C54232C25AF99C000F62E1E /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		1C54233225AF9A2B00F62E1E /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		1C54237025BA11F700F62E1E /* SubcategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategoryViewController.swift; sourceTree = "<group>"; };
+		1C54238625BA143500F62E1E /* SubcategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategoryTableViewCell.swift; sourceTree = "<group>"; };
+		1CB564BB25C21672001D9BF6 /* ProductListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCollectionViewController.swift; sourceTree = "<group>"; };
+		1CB564C025C216DF001D9BF6 /* ProductListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListCollectionViewCell.swift; sourceTree = "<group>"; };
+		1CB564C825C5A95F001D9BF6 /* PurchaseBasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseBasketViewController.swift; sourceTree = "<group>"; };
+		1CB564D825C72A10001D9BF6 /* ProductCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardViewController.swift; sourceTree = "<group>"; };
+		1CB564E525C9E65B001D9BF6 /* ProductCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		1CB564ED25CC3C1D001D9BF6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1CB5651525D330B2001D9BF6 /* SizeViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeViewAnimation.swift; sourceTree = "<group>"; };
+		1CB5652525D70092001D9BF6 /* SizePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePopUpViewController.swift; sourceTree = "<group>"; };
+		1CB5652D25D7025A001D9BF6 /* SizePopUpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePopUpTableViewCell.swift; sourceTree = "<group>"; };
+		1CB5653525D8064C001D9BF6 /* AddToBasketButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBasketButtonAnimation.swift; sourceTree = "<group>"; };
+		1CB5653B25D80F1F001D9BF6 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		1CB5654025DAFC18001D9BF6 /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
+		1CB5654525DDA6DE001D9BF6 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C5422D125AF984F00F62E1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C5422EA25AF985400F62E1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C5422F525AF985400F62E1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C5422CB25AF984F00F62E1E = {
+			isa = PBXGroup;
+			children = (
+				1C5422D625AF984F00F62E1E /* BSWearOnlineShop */,
+				1C5422F025AF985400F62E1E /* BSWearOnlineShopTests */,
+				1C5422FB25AF985400F62E1E /* BSWearOnlineShopUITests */,
+				1C5422D525AF984F00F62E1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C5422D525AF984F00F62E1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C5422D425AF984F00F62E1E /* BSWearOnlineShop.app */,
+				1C5422ED25AF985400F62E1E /* BSWearOnlineShopTests.xctest */,
+				1C5422F825AF985400F62E1E /* BSWearOnlineShopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C5422D625AF984F00F62E1E /* BSWearOnlineShop */ = {
+			isa = PBXGroup;
+			children = (
+				1C5422D725AF984F00F62E1E /* AppDelegate.swift */,
+				1C5422D925AF984F00F62E1E /* SceneDelegate.swift */,
+				1C7067CC25EAA97A0082FFC2 /* Animation */,
+				1C54232325AF993400F62E1E /* Tools */,
+				1C54231525AF98E600F62E1E /* Models */,
+				1C54230E25AF98A400F62E1E /* Managers */,
+				1C5422DD25AF984F00F62E1E /* Main.storyboard */,
+				1C54233A25AF9A3100F62E1E /* Cells */,
+				1C54233125AF99E400F62E1E /* Controllers */,
+				1C5422E325AF985400F62E1E /* Assets.xcassets */,
+				1C5422E525AF985400F62E1E /* LaunchScreen.storyboard */,
+				1C5422E825AF985400F62E1E /* Info.plist */,
+				1C5422E025AF984F00F62E1E /* BSWearOnlineShop.xcdatamodeld */,
+			);
+			path = BSWearOnlineShop;
+			sourceTree = "<group>";
+		};
+		1C5422F025AF985400F62E1E /* BSWearOnlineShopTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C5422F125AF985400F62E1E /* BSWearOnlineShopTests.swift */,
+				1C5422F325AF985400F62E1E /* Info.plist */,
+			);
+			path = BSWearOnlineShopTests;
+			sourceTree = "<group>";
+		};
+		1C5422FB25AF985400F62E1E /* BSWearOnlineShopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1C5422FC25AF985400F62E1E /* BSWearOnlineShopUITests.swift */,
+				1C5422FE25AF985400F62E1E /* Info.plist */,
+			);
+			path = BSWearOnlineShopUITests;
+			sourceTree = "<group>";
+		};
+		1C54230E25AF98A400F62E1E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1C54231025AF98DE00F62E1E /* NetworkManager.swift */,
+				1CB5653B25D80F1F001D9BF6 /* CoreDataManager.swift */,
+				1CB5654525DDA6DE001D9BF6 /* ImageLoader.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1C54231525AF98E600F62E1E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C54231625AF991300F62E1E /* Category.swift */,
+				1C54231E25AF992600F62E1E /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C54232325AF993400F62E1E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				1C54232425AF994700F62E1E /* URLs.swift */,
+				1CB564ED25CC3C1D001D9BF6 /* Extensions.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		1C54233125AF99E400F62E1E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C54232C25AF99C000F62E1E /* CategoryViewController.swift */,
+				1C54237025BA11F700F62E1E /* SubcategoryViewController.swift */,
+				1CB564BB25C21672001D9BF6 /* ProductListCollectionViewController.swift */,
+				1CB564D825C72A10001D9BF6 /* ProductCardViewController.swift */,
+				1CB5652525D70092001D9BF6 /* SizePopUpViewController.swift */,
+				1CB564C825C5A95F001D9BF6 /* PurchaseBasketViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1C54233A25AF9A3100F62E1E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1C54233225AF9A2B00F62E1E /* CategoryTableViewCell.swift */,
+				1C54238625BA143500F62E1E /* SubcategoryTableViewCell.swift */,
+				1CB564C025C216DF001D9BF6 /* ProductListCollectionViewCell.swift */,
+				1CB564E525C9E65B001D9BF6 /* ProductCardCollectionViewCell.swift */,
+				1CB5652D25D7025A001D9BF6 /* SizePopUpTableViewCell.swift */,
+				1CB5654025DAFC18001D9BF6 /* BasketTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1C7067CC25EAA97A0082FFC2 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				1CB5651525D330B2001D9BF6 /* SizeViewAnimation.swift */,
+				1CB5653525D8064C001D9BF6 /* AddToBasketButtonAnimation.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C5422D325AF984F00F62E1E /* BSWearOnlineShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C54230125AF985400F62E1E /* Build configuration list for PBXNativeTarget "BSWearOnlineShop" */;
+			buildPhases = (
+				1C5422D025AF984F00F62E1E /* Sources */,
+				1C5422D125AF984F00F62E1E /* Frameworks */,
+				1C5422D225AF984F00F62E1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BSWearOnlineShop;
+			productName = BSWearOnlineShop;
+			productReference = 1C5422D425AF984F00F62E1E /* BSWearOnlineShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C5422EC25AF985400F62E1E /* BSWearOnlineShopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C54230425AF985400F62E1E /* Build configuration list for PBXNativeTarget "BSWearOnlineShopTests" */;
+			buildPhases = (
+				1C5422E925AF985400F62E1E /* Sources */,
+				1C5422EA25AF985400F62E1E /* Frameworks */,
+				1C5422EB25AF985400F62E1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C5422EF25AF985400F62E1E /* PBXTargetDependency */,
+			);
+			name = BSWearOnlineShopTests;
+			productName = BSWearOnlineShopTests;
+			productReference = 1C5422ED25AF985400F62E1E /* BSWearOnlineShopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1C5422F725AF985400F62E1E /* BSWearOnlineShopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C54230725AF985400F62E1E /* Build configuration list for PBXNativeTarget "BSWearOnlineShopUITests" */;
+			buildPhases = (
+				1C5422F425AF985400F62E1E /* Sources */,
+				1C5422F525AF985400F62E1E /* Frameworks */,
+				1C5422F625AF985400F62E1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C5422FA25AF985400F62E1E /* PBXTargetDependency */,
+			);
+			name = BSWearOnlineShopUITests;
+			productName = BSWearOnlineShopUITests;
+			productReference = 1C5422F825AF985400F62E1E /* BSWearOnlineShopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C5422CC25AF984F00F62E1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					1C5422D325AF984F00F62E1E = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					1C5422EC25AF985400F62E1E = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 1C5422D325AF984F00F62E1E;
+					};
+					1C5422F725AF985400F62E1E = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 1C5422D325AF984F00F62E1E;
+					};
+				};
+			};
+			buildConfigurationList = 1C5422CF25AF984F00F62E1E /* Build configuration list for PBXProject "BSWearOnlineShop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C5422CB25AF984F00F62E1E;
+			productRefGroup = 1C5422D525AF984F00F62E1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C5422D325AF984F00F62E1E /* BSWearOnlineShop */,
+				1C5422EC25AF985400F62E1E /* BSWearOnlineShopTests */,
+				1C5422F725AF985400F62E1E /* BSWearOnlineShopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C5422D225AF984F00F62E1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C5422E725AF985400F62E1E /* LaunchScreen.storyboard in Resources */,
+				1C5422E425AF985400F62E1E /* Assets.xcassets in Resources */,
+				1C5422DF25AF984F00F62E1E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C5422EB25AF985400F62E1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C5422F625AF985400F62E1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C5422D025AF984F00F62E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C54238725BA143500F62E1E /* SubcategoryTableViewCell.swift in Sources */,
+				1C5422E225AF984F00F62E1E /* BSWearOnlineShop.xcdatamodeld in Sources */,
+				1CB5651625D330B2001D9BF6 /* SizeViewAnimation.swift in Sources */,
+				1C54231125AF98DE00F62E1E /* NetworkManager.swift in Sources */,
+				1C54232525AF994700F62E1E /* URLs.swift in Sources */,
+				1CB564C925C5A95F001D9BF6 /* PurchaseBasketViewController.swift in Sources */,
+				1C54237125BA11F700F62E1E /* SubcategoryViewController.swift in Sources */,
+				1CB5653625D8064D001D9BF6 /* AddToBasketButtonAnimation.swift in Sources */,
+				1CB564EE25CC3C1E001D9BF6 /* Extensions.swift in Sources */,
+				1CB5654125DAFC19001D9BF6 /* BasketTableViewCell.swift in Sources */,
+				1C5422D825AF984F00F62E1E /* AppDelegate.swift in Sources */,
+				1CB5652E25D7025A001D9BF6 /* SizePopUpTableViewCell.swift in Sources */,
+				1CB564C125C216DF001D9BF6 /* ProductListCollectionViewCell.swift in Sources */,
+				1CB564D925C72A10001D9BF6 /* ProductCardViewController.swift in Sources */,
+				1CB5652625D70092001D9BF6 /* SizePopUpViewController.swift in Sources */,
+				1C54233325AF9A2B00F62E1E /* CategoryTableViewCell.swift in Sources */,
+				1C5422DA25AF984F00F62E1E /* SceneDelegate.swift in Sources */,
+				1C54231725AF991300F62E1E /* Category.swift in Sources */,
+				1CB564BC25C21672001D9BF6 /* ProductListCollectionViewController.swift in Sources */,
+				1CB564E625C9E65B001D9BF6 /* ProductCardCollectionViewCell.swift in Sources */,
+				1CB5653C25D80F20001D9BF6 /* CoreDataManager.swift in Sources */,
+				1CB5654625DDA6E1001D9BF6 /* ImageLoader.swift in Sources */,
+				1C54232D25AF99C000F62E1E /* CategoryViewController.swift in Sources */,
+				1C54231F25AF992600F62E1E /* Product.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C5422E925AF985400F62E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C5422F225AF985400F62E1E /* BSWearOnlineShopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C5422F425AF985400F62E1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C5422FD25AF985400F62E1E /* BSWearOnlineShopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C5422EF25AF985400F62E1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C5422D325AF984F00F62E1E /* BSWearOnlineShop */;
+			targetProxy = 1C5422EE25AF985400F62E1E /* PBXContainerItemProxy */;
+		};
+		1C5422FA25AF985400F62E1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C5422D325AF984F00F62E1E /* BSWearOnlineShop */;
+			targetProxy = 1C5422F925AF985400F62E1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C5422DD25AF984F00F62E1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C5422DE25AF984F00F62E1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1C5422E525AF985400F62E1E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C5422E625AF985400F62E1E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C5422FF25AF985400F62E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C54230025AF985400F62E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C54230225AF985400F62E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K64XDPJL6Q;
+				INFOPLIST_FILE = BSWearOnlineShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tasks.BSWearOnlineShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C54230325AF985400F62E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K64XDPJL6Q;
+				INFOPLIST_FILE = BSWearOnlineShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tasks.BSWearOnlineShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1C54230525AF985400F62E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K64XDPJL6Q;
+				INFOPLIST_FILE = BSWearOnlineShopTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tasks.BSWearOnlineShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BSWearOnlineShop.app/BSWearOnlineShop";
+			};
+			name = Debug;
+		};
+		1C54230625AF985400F62E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K64XDPJL6Q;
+				INFOPLIST_FILE = BSWearOnlineShopTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tasks.BSWearOnlineShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BSWearOnlineShop.app/BSWearOnlineShop";
+			};
+			name = Release;
+		};
+		1C54230825AF985400F62E1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K64XDPJL6Q;
+				INFOPLIST_FILE = BSWearOnlineShopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tasks.BSWearOnlineShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BSWearOnlineShop;
+			};
+			name = Debug;
+		};
+		1C54230925AF985400F62E1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K64XDPJL6Q;
+				INFOPLIST_FILE = BSWearOnlineShopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tasks.BSWearOnlineShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BSWearOnlineShop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C5422CF25AF984F00F62E1E /* Build configuration list for PBXProject "BSWearOnlineShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C5422FF25AF985400F62E1E /* Debug */,
+				1C54230025AF985400F62E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C54230125AF985400F62E1E /* Build configuration list for PBXNativeTarget "BSWearOnlineShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C54230225AF985400F62E1E /* Debug */,
+				1C54230325AF985400F62E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C54230425AF985400F62E1E /* Build configuration list for PBXNativeTarget "BSWearOnlineShopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C54230525AF985400F62E1E /* Debug */,
+				1C54230625AF985400F62E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C54230725AF985400F62E1E /* Build configuration list for PBXNativeTarget "BSWearOnlineShopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C54230825AF985400F62E1E /* Debug */,
+				1C54230925AF985400F62E1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1C5422E025AF984F00F62E1E /* BSWearOnlineShop.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1C5422E125AF984F00F62E1E /* BSWearOnlineShop.xcdatamodel */,
+			);
+			currentVersion = 1C5422E125AF984F00F62E1E /* BSWearOnlineShop.xcdatamodel */;
+			path = BSWearOnlineShop.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1C5422CC25AF984F00F62E1E /* Project object */;
+}
