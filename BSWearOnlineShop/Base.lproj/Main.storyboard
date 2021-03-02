@@ -631,10 +631,6 @@
                                 <rect key="frame" x="0.0" y="367" width="428" height="69"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAD-6V-kj9">
-                                <rect key="frame" x="170" y="377" width="88" height="5"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВЫБЕРИТЕ РАЗМЕР" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LS5-EX-Jko">
                                 <rect key="frame" x="0.0" y="382" width="428" height="54"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -686,6 +682,10 @@
                                     <outlet property="delegate" destination="8sN-R0-8HY" id="5vH-MN-ezc"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAD-6V-kj9">
+                                <rect key="frame" x="177" y="354" width="74" height="5"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SrZ-tf-JUi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -693,18 +693,18 @@
                             <constraint firstItem="LS5-EX-Jko" firstAttribute="trailing" secondItem="3TD-IQ-BZw" secondAttribute="trailing" id="5M2-PX-879"/>
                             <constraint firstItem="GvS-va-cpX" firstAttribute="top" secondItem="3TD-IQ-BZw" secondAttribute="bottom" id="6KR-ZG-tg5"/>
                             <constraint firstItem="LS5-EX-Jko" firstAttribute="leading" secondItem="3TD-IQ-BZw" secondAttribute="leading" id="I51-TW-1Gh"/>
-                            <constraint firstItem="SAD-6V-kj9" firstAttribute="leading" secondItem="3TD-IQ-BZw" secondAttribute="leading" constant="170" id="Knv-v0-acE"/>
+                            <constraint firstItem="SAD-6V-kj9" firstAttribute="leading" secondItem="3ze-xy-ocm" secondAttribute="leading" constant="177" id="Knv-v0-acE"/>
                             <constraint firstItem="SrZ-tf-JUi" firstAttribute="trailing" secondItem="GvS-va-cpX" secondAttribute="trailing" id="LPF-kr-fmn"/>
                             <constraint firstItem="3TD-IQ-BZw" firstAttribute="top" secondItem="SrZ-tf-JUi" secondAttribute="top" constant="323" id="NbK-GL-nqt"/>
                             <constraint firstItem="SrZ-tf-JUi" firstAttribute="trailing" secondItem="3TD-IQ-BZw" secondAttribute="trailing" id="P7E-Lu-lmA"/>
                             <constraint firstItem="GvS-va-cpX" firstAttribute="leading" secondItem="SrZ-tf-JUi" secondAttribute="leading" id="T7E-cn-2ap"/>
-                            <constraint firstItem="SAD-6V-kj9" firstAttribute="bottom" secondItem="LS5-EX-Jko" secondAttribute="top" id="cfr-Ef-YMq"/>
+                            <constraint firstItem="SAD-6V-kj9" firstAttribute="bottom" secondItem="LS5-EX-Jko" secondAttribute="top" constant="-23" id="cfr-Ef-YMq"/>
                             <constraint firstItem="SrZ-tf-JUi" firstAttribute="bottom" secondItem="GvS-va-cpX" secondAttribute="bottom" id="dHS-si-XKI"/>
-                            <constraint firstItem="3TD-IQ-BZw" firstAttribute="trailing" secondItem="SAD-6V-kj9" secondAttribute="trailing" constant="170" id="kxE-Cx-OuP"/>
+                            <constraint firstAttribute="trailing" secondItem="SAD-6V-kj9" secondAttribute="trailing" constant="177" id="kxE-Cx-OuP"/>
                             <constraint firstItem="LS5-EX-Jko" firstAttribute="bottom" secondItem="3TD-IQ-BZw" secondAttribute="bottom" id="nyA-E1-Jtj"/>
-                            <constraint firstItem="LS5-EX-Jko" firstAttribute="top" secondItem="SAD-6V-kj9" secondAttribute="top" constant="5" id="qmi-ts-pKN"/>
+                            <constraint firstItem="LS5-EX-Jko" firstAttribute="top" secondItem="SAD-6V-kj9" secondAttribute="top" constant="28" id="qmi-ts-pKN"/>
                             <constraint firstItem="3TD-IQ-BZw" firstAttribute="leading" secondItem="SrZ-tf-JUi" secondAttribute="leading" id="qtO-Pn-6Qs"/>
-                            <constraint firstItem="SAD-6V-kj9" firstAttribute="top" secondItem="3TD-IQ-BZw" secondAttribute="top" constant="10" id="shE-Yy-J1k"/>
+                            <constraint firstItem="SAD-6V-kj9" firstAttribute="top" secondItem="3TD-IQ-BZw" secondAttribute="top" constant="-13" id="shE-Yy-J1k"/>
                         </constraints>
                     </view>
                     <connections>
