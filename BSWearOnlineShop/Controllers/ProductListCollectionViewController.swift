@@ -21,18 +21,6 @@ class ProductListCollectionViewController: UICollectionViewController {
         getProductList()
     }
     
-
-    // MARK: - Get list of product by subcategory ID
-    func getProductList() {
-        guard let subcategoryID = subcategoryID else {return}
-        NetworkManager().loadDataFromURL(urlString: URLs().getProductURLFromID(subcategoryID: subcategoryID)!, type: Product.self) { (data) in
-            guard let data = data else {return}
-            DispatchQueue.main.async {
-                self.productList = data
-                self.collectionView.reloadData()
-            }
-        }
-    }
     
     // MARK: UICollectionViewDataSource
     
@@ -68,6 +56,7 @@ class ProductListCollectionViewController: UICollectionViewController {
 
 // MARK: UICollectionViewDelegate
 extension ProductListCollectionViewController : UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let numberOfItemsPerRow: CGFloat = 2
         let interItemSpacing: CGFloat = 20
@@ -77,9 +66,11 @@ extension ProductListCollectionViewController : UICollectionViewDelegateFlowLayo
         let height = width + labelSrackHeight
         return CGSize(width: width, height: height)
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 20
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 20, bottom: 20, right: 20)
     }
@@ -87,4 +78,18 @@ extension ProductListCollectionViewController : UICollectionViewDelegateFlowLayo
     
 }
 
+// MARK: - Get list of product by subcategory ID
+extension ProductListCollectionViewController {
+    
+    func getProductList() {
+        guard let subcategoryID = subcategoryID else {return}
+        NetworkManager().loadDataFromURL(urlString: URLs().getProductURLFromID(subcategoryID: subcategoryID)!, type: Product.self) { (data) in
+            guard let data = data else {return}
+            DispatchQueue.main.async {
+                self.productList = data
+                self.collectionView.reloadData()
+            }
+        }
+    }
+}
 

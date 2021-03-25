@@ -29,7 +29,12 @@ class SubcategoryViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        subcategories.count
+        if subcategories.count == 0 {
+            self.tableView.showMessageIfBasketEmpty("Товары в данной категории отсутствуют")
+        } else {
+            self.tableView.updateTable()
+        }
+        return subcategories.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

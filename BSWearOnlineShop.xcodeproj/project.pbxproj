@@ -118,6 +118,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C367EAD260D19E700A53E36 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				1C5422D725AF984F00F62E1E /* AppDelegate.swift */,
+				1C5422D925AF984F00F62E1E /* SceneDelegate.swift */,
+				1C5422E325AF985400F62E1E /* Assets.xcassets */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		1C367EAE260D1A1F00A53E36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C5422E525AF985400F62E1E /* LaunchScreen.storyboard */,
+				1C5422DD25AF984F00F62E1E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1C5422CB25AF984F00F62E1E = {
 			isa = PBXGroup;
 			children = (
@@ -141,17 +160,14 @@
 		1C5422D625AF984F00F62E1E /* BSWearOnlineShop */ = {
 			isa = PBXGroup;
 			children = (
-				1C5422D725AF984F00F62E1E /* AppDelegate.swift */,
-				1C5422D925AF984F00F62E1E /* SceneDelegate.swift */,
+				1C367EAE260D1A1F00A53E36 /* View */,
+				1C367EAD260D19E700A53E36 /* Supporting files */,
 				1C7067CC25EAA97A0082FFC2 /* Animation */,
 				1C54232325AF993400F62E1E /* Tools */,
 				1C54231525AF98E600F62E1E /* Models */,
 				1C54230E25AF98A400F62E1E /* Managers */,
-				1C5422DD25AF984F00F62E1E /* Main.storyboard */,
 				1C54233A25AF9A3100F62E1E /* Cells */,
 				1C54233125AF99E400F62E1E /* Controllers */,
-				1C5422E325AF985400F62E1E /* Assets.xcassets */,
-				1C5422E525AF985400F62E1E /* LaunchScreen.storyboard */,
 				1C5422E825AF985400F62E1E /* Info.plist */,
 				1C5422E025AF984F00F62E1E /* BSWearOnlineShop.xcdatamodeld */,
 			);

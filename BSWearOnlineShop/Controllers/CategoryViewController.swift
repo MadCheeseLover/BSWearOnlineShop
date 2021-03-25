@@ -69,6 +69,7 @@ class CategoryViewController: UITableViewController {
         if let subcategoriesController = segue.destination as? SubcategoryViewController, segue.identifier == "showSubcategory" {
             subcategoriesController.subcategories = categories[selectedRow].subcategories
 
+
         }
         
     }
