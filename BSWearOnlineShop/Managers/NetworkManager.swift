@@ -21,10 +21,10 @@ class NetworkManager {
             switch type {
             case is Categories.Type:
                 let array = Array(json.values) as! [Categories]
-                let sortedAndFilteredArray = array.sorted { (c1, c2) -> Bool in
+                let sorted = array.sorted { (c1, c2) -> Bool in
                     return c1.name < c2.name
-                }.filter { !$0.subcategories.isEmpty}
-                completion(sortedAndFilteredArray as? [T])
+                }
+                completion(sorted as? [T])
             case is Product.Type:
                 let array = Array(json.values) as! [Product]
                 let sortedArray = array.sorted { (p1, p2) -> Bool in
